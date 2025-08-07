@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- res/values/styles.xml -->
+    <style name="AppPopupMenuStyle" parent="ThemeOverlay.AppCompat.Dark">//ThemeOverlay.AppCompat.Dark
+        <item name="android:popupBackground">#504F4F</item> <!-- Always black -->
+        <item name="android:textColor">#FFFFFF</item>       <!-- White text -->
+
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.MaterialComponents.DayNight.Dialog.Alert">
+        <item name="colorAccent">#FF5722</item> <!-- Button color -->
+        <item name="android:textColorPrimary">#FFFFFF</item> <!-- Title & message text -->
+        <item name="android:background">@color/App2</item> <!-- Dialog background -->
+    </style>
+
+
+</resources>

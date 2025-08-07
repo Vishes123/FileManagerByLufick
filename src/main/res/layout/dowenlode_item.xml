@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/downloadItemRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#101010"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/fileIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/folder3"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="File Icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="File Name"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/fileSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="File Size"
+            android:textColor="#BBBBBB"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/fevratebtnfordowenlode"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star_big_on"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="More options"
+        android:layout_marginRight="25dp"
+
+        android:padding="8dp" />
+
+
+
+    <ImageView
+        android:id="@+id/fileOptions"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:padding="4dp"
+        android:src="@drawable/three_dot"
+        android:contentDescription="Options"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+</LinearLayout>

@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/threeDotBottoBar2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="0dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:background="@android:color/black"
+    android:visibility="visible">
+
+    <LinearLayout
+        android:id="@+id/bottomBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp"
+        android:background="@drawable/bottomcard">
+        <LinearLayout
+            android:id="@+id/RenameLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:gravity="center_vertical"
+            android:background="#5E5E5F"> <!-- Optional -->
+
+            <!-- FileImage -->
+            <ImageView
+                android:id="@+id/FileImage2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/greenfolder"
+                android:scaleType="centerInside" />
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/Rename2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="All File Name"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <!-- EditImage -->
+            <ImageView
+                android:id="@+id/EditImage2"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/edit"
+                android:scaleType="centerInside" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" />
+
+        <!-- First Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="3">
+
+            <!-- Copy -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/icon_card"
+                    android:layout_gravity="center">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/btnCopy2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:iiv_color="#000000"
+                        app:iiv_icon="gmd_content_copy"
+                        app:iiv_size="24dp" />
+                </FrameLayout>
+
+                <TextView
+                    android:text="Copy"
+                    android:textColor="@color/white"
+
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Move -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/icon_card"
+                    android:layout_gravity="center">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/btnMove2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:iiv_color="#000000"
+                        app:iiv_icon="gmd_content_cut"
+                        app:iiv_size="24dp" />
+                </FrameLayout>
+                <TextView
+                    android:text="Move"
+                    android:textColor="@color/white"
+
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Move to Safe Box -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/icon_card"
+                    android:layout_gravity="center">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/btnShare2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:iiv_color="#000000"
+                        app:iiv_icon="gmd_lock"
+                        app:iiv_size="24dp" />
+                </FrameLayout>
+                <TextView
+                    android:text="Safe Box"
+                    android:textColor="@color/white"
+
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Second Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Compress -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/icon_card"
+                    android:layout_gravity="center">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/copmress2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:iiv_color="#000000"
+                        app:iiv_icon="gmd_folder_zip"
+                        app:iiv_size="24dp" />
+                </FrameLayout>
+                <TextView
+                    android:text="Compress"
+                    android:textColor="@color/white"
+
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Rename -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/icon_card"
+                    android:layout_gravity="center">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/btnRename2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:iiv_color="#000000"
+                        app:iiv_icon="gmd_edit"
+                        app:iiv_size="24dp" />
+                </FrameLayout>
+                <TextView
+                    android:text="Rename"
+                    android:textColor="@color/white"
+
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Delete -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+                <FrameLayout
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/icon_card"
+                    android:layout_gravity="center">
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/btnDelete2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        app:iiv_color="#000000"
+                        app:iiv_icon="gmd_delete"
+                        app:iiv_size="24dp" />
+                </FrameLayout>
+                <TextView
+                    android:text="Delete"
+                    android:textColor="@color/white"
+
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="25sp"
+            android:background="#BDBDBD" />
+        <!-- Below icons list -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
+            <!-- OpenWith -->
+            <LinearLayout
+                android:id="@+id/openWithlayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="12dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/openWithIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd_lock"
+                    app:iiv_color="#000000"
+                    app:iiv_size="24dp" />
+                <TextView
+                    android:id="@+id/openWithTxt2"
+                    android:layout_marginStart="12dp"
+                    android:text="Open with"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!--Share-->
+            <LinearLayout
+                android:id="@+id/ShareLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="12dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/shareIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd_lock"
+                    app:iiv_color="#000000"
+                    app:iiv_size="24dp" />
+                <TextView
+                    android:layout_marginStart="12dp"
+                    android:text="Share"
+                    android:textColor="@color/white"
+
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+            <!-- Encrypt -->
+            <LinearLayout
+                android:id="@+id/storsgeany2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="12dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/storageIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd_lock"
+                    app:iiv_color="#000000"
+                    app:iiv_size="24dp" />
+                <TextView
+                    android:layout_marginStart="12dp"
+                    android:text="Storage Analysis"
+                    android:textColor="@color/white"
+
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Hide -->
+            <LinearLayout
+                android:id="@+id/hide2"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/hideicon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd_visibility_off"
+                    app:iiv_color="#000000"
+                    app:iiv_size="24dp" />
+                <TextView
+                    android:id="@+id/dialogHideTxt2"
+                    android:layout_marginStart="12dp"
+                    android:text="Hide"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Add to Favourite -->
+            <LinearLayout
+                android:id="@+id/fev2"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/fevIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd_star"
+                    app:iiv_color="#000000"
+                    app:iiv_size="24dp" />
+                <TextView
+                    android:id="@+id/dialogHideFav2"
+                    android:layout_marginStart="12dp"
+                    android:text="Add to favourite"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <!-- Add to SortCut -->
+            <LinearLayout
+                android:id="@+id/LayoutSortCutFile"
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="12dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/SortCutIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd_star"
+                    app:iiv_color="#000000"
+                    app:iiv_size="24dp" />
+                <TextView
+                    android:layout_marginStart="12dp"
+                    android:text="Add to Short cut"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+            <!-- Details -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#BDBDBD" />
+            <LinearLayout
+                android:padding="4dp"
+                android:layout_marginLeft="6dp"
+                android:id="@+id/details2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp">
+                <com.mikepenz.iconics.view.IconicsImageView
+                    android:id="@+id/detailsIcon2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    app:iiv_icon="gmd_info_outline"
+                    app:iiv_color="#000000"
+                    app:iiv_size="24dp" />
+                <TextView
+                    android:layout_marginStart="12dp"
+                    android:text="Details"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

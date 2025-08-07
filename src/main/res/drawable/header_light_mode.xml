@@ -1,0 +1,22 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state: darker, दबा हुआ feel -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#cccccc"/> <!-- light grey pressed -->
+            <corners android:radius="5dp"/>
+            <stroke android:width="1dp" android:color="#aaaaaa"/>
+        </shape>
+    </item>
+
+    <!-- Default raised state: gradient top->bottom for card effect -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:angle="270"
+                android:startColor="#ffffff"
+            android:endColor="#dddddd"/> <!-- bottom -->
+            <corners android:radius="2dp"/>
+            <stroke android:width="2dp" android:color="#bbbbbb"/>
+        </shape>
+    </item>
+</selector>

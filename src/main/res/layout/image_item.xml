@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    card_view:cardCornerRadius="12dp"
+    android:elevation="6dp"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card_white"
+        android:paddingBottom="8dp"
+        android:paddingTop="4dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp">
+
+        <!-- Image with overlay -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/image_placeholder_bg"
+            android:clipToOutline="true">
+
+            <ImageView
+                android:id="@+id/imageViewItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true" />
+
+            <!-- Three-dot menu -->
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|top"
+                android:layout_margin="8dp"
+                android:src="@drawable/three_dot"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:contentDescription="More Options" />
+        </FrameLayout>
+
+        <!-- Name below image -->
+        <TextView
+            android:id="@+id/textViewImageName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:text="Image Name"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:background="@color/App"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:ellipsize="end"
+            android:maxLines="1" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

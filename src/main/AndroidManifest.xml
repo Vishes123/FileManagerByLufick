@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--
+    Android 13 specific
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_DOCUMENTS" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    -->
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+
+
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> <!-- Permissions -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_DOCUMENTS" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FileManagerByLufic"
+        tools:targetApi="31">
+        <activity
+            android:name=".AIS.FileSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AppsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".language.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".imageViewrSwipeSlide.ImageViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SafeBoxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tresh.TreshActivity"
+            android:exported="false" />
+        <activity
+            android:name=".separateWork.RecentFiles"
+            android:exported="false" />
+        <activity
+            android:name=".separateWork.SeprateDowenlode"
+            android:exported="false" />
+        <activity
+            android:name=".separateWork.SeprateApk"
+            android:exported="false" />
+        <activity
+            android:name=".separateWork.SeprateAudio"
+            android:exported="false" />
+        <activity
+            android:name=".favorites.Favorite"
+            android:exported="false" />
+        <activity
+            android:name=".settingScreen.Setting"
+            android:exported="false" />
+        <activity
+            android:name=".storagePieCharteStatusGraph.Charte"
+            android:exported="false" />
+        <activity
+            android:name=".separateWork.SeprateDocument"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerActivity"
+            android:exported="false" />
+        <!--
+ <activity
+            android:name=".AppDrawer"
+            android:exported="false"
+            android:label="@string/title_activity_app_drawer"
+            android:theme="@style/Theme.FileManagerByLufic.NoActionBar"
+            tools:ignore="MissingClass" />
+        -->
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".separateWork.SeprateVideo"
+            android:exported="false" />
+        <activity
+            android:name=".separateWork.SeprateImage"
+            android:exported="false" />
+        <!--
+  <activity
+            android:name=".FileActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".FileActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ImageViewActivity"
+            android:exported="false" />
+        <!--
+   <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+        -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

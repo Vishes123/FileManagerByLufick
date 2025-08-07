@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/spimageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/sptextViewImageName"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_gravity="bottom"
+        android:padding="8dp"
+        android:text="Image Name"
+        android:textSize="10sp"
+
+        android:textColor="#FDFDFD"
+        android:background="@color/App2"/>
+
+    <!-- 3-dot menu icon (More options) -->
+    <ImageView
+        android:id="@+id/spmoreOptions"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end|top"
+        android:layout_margin="4dp"
+        android:src="@drawable/three_dot"
+        android:contentDescription="More Options"
+        android:background="?attr/selectableItemBackgroundBorderless"
+         />
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/Imagefevratebtn"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/btn_star_big_on"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="More options"
+
+        android:padding="8dp" />
+</FrameLayout>

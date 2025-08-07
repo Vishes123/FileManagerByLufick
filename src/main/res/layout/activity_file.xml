@@ -1,0 +1,174 @@
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/App"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/FileLiner"
+        android:layout_marginTop="35dp"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:background="@color/App"
+            android:layout_marginTop="0dp"
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize">
+
+             <!--   <ImageButton
+                    android:id="@+id/menuLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Menu"
+                    app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+                    app:tint="#FFFFFF" android:background="@android:color/transparent"/>-->
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/App2"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:orientation="horizontal" />
+            </RelativeLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/pathScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/black"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/pathContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/touchInterceptor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                />
+            <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_height="match_parent">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Filerecycle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="28dp"
+                android:padding="8dp" />
+
+            </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:indeterminateTint="@color/blue"
+                android:background="@drawable/progress_bar_card"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|right"
+                android:layout_marginBottom="50dp"
+               android:layout_marginRight="30dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Add"
+                app:srcCompat="@drawable/add" />
+        </FrameLayout>
+
+       <!-- <include
+            android:id="@+id/threeDotBottoBar"
+            layout="@layout/three_dot_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginBottom="30dp"
+            />-->
+
+        <include
+            android:id="@+id/threeDotBottoBar"
+            layout="@layout/three_dot_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="50dp"
+            android:layout_alignParentBottom="true"
+            />
+        <include
+            android:id="@+id/threeDotBottoBar2"
+            layout="@layout/threedotbottombarfor_file"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1E1E1E"
+        app:itemTextColor="#FFFFFF"
+        app:itemIconTint="#FFFFFF"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_item"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
+
+

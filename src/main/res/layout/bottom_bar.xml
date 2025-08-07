@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_gravity="bottom"
+    android:elevation="8dp"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginBottom="50dp"
+    android:background="@drawable/bottomcard"
+    android:visibility="visible">
+
+    <!-- Delete -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/btn_delete"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:iiv_color="#FFFFFF"
+            app:iiv_icon="gmd-delete"
+            app:iiv_size="24dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Select All -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/btn_select_all"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:iiv_color="#FFFFFF"
+            app:iiv_icon="gmd-select-all"
+            app:iiv_size="24dp" />
+
+        <TextView
+            android:id="@+id/selectAlltxt"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select All"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Open -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/btn_open"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:iiv_color="#FFFFFF"
+            app:iiv_icon="gmd-open-in-new"
+            app:iiv_size="24dp" />
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Copy -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/btn_copy"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:iiv_color="#FFFFFF"
+            app:iiv_icon="gmd-content-copy"
+            app:iiv_size="24dp" />
+
+        <TextView
+            android:id="@+id/CopyPaste"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!-- Move -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/btn_move"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            app:iiv_color="#FFFFFF"
+            app:iiv_icon="gmd-folder-move"
+            app:iiv_size="24dp" />
+
+        <TextView
+            android:id="@+id/moveTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

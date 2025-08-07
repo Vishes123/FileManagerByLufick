@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/App2">
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/App">
+
+        <!-- Toolbar with menu button -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_marginTop="30dp"
+            android:id="@+id/toolbar3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/App2"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+            app:titleTextColor="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dashboard"
+                android:textSize="25dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF" />
+
+           <!-- <ImageView
+                android:id="@+id/AI"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/chatgpt"
+                android:layout_marginLeft="20dp"
+                android:textColor="#FFFFFF"/>-->
+            <!-- Drawer menu button
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginLeft="80dp"
+                android:layout_gravity="start"
+                android:background="@android:color/transparent"
+                android:contentDescription="Menu"
+                app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+                app:tint="#FFFFFF" />-->
+
+
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_marginTop="-5dp"
+            android:id="@+id/dregDrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0C0C0C"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:id="@+id/sdcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-27dp"
+                android:orientation="vertical">
+                <!--Test-->
+                <LinearLayout
+                    android:id="@+id/DLMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="12dp"
+                    android:background="@drawable/only_header"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="23dp">
+
+                    <!-- Pie Chart + Center Text -->
+                    <FrameLayout
+                        android:layout_marginRight="-30dp"
+                        android:layout_width="130dp"
+                        android:layout_height="130dp"
+                        android:layout_gravity="center_vertical">
+
+                        <com.github.mikephil.charting.charts.PieChart
+                            android:layout_marginRight="10dp"
+                            android:id="@+id/pieChart3"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:id="@+id/centerText3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Internal"
+                            android:textColor="#FF0000"
+                            android:layout_marginRight="10dp"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <!-- Spacer (optional) -->
+                    <Space
+                        android:layout_width="-4dp"
+                        android:layout_height="match_parent" />
+
+                    <!-- Legend Grid -->
+                    <GridLayout
+                        android:id="@+id/legendLayout3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:columnCount="2"
+                        android:orientation="horizontal"
+                        android:alignmentMode="alignMargins"
+                        android:rowOrderPreserved="false"
+                        android:useDefaultMargins="true"
+                        android:paddingStart="7dp"
+                        android:paddingEnd="-2dp" />
+                </LinearLayout>
+
+
+
+                <!-- Search CardView -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:radius="12dp"
+                    app:cardBackgroundColor="#1E1E1E"
+                    app:cardElevation="4dp">
+
+                  <!--  <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:paddingStart="16dp"
+                        android:paddingEnd="16dp"
+                        tools:ignore="ExtraText">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/search"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:iiv_icon="cmd-close"
+                            android:tint="#FFFFFF" />
+
+                        <EditText
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:hint="Search"
+                            android:textColorHint="#AAAAAA"
+                            android:textColor="#FFFFFF"
+                            android:background="@android:color/transparent"
+                            android:paddingStart="8dp" />
+
+                    </LinearLayout> -->
+                </androidx.cardview.widget.CardView>
+
+                <!-- Recents -->
+                <LinearLayout
+                    android:id="@+id/o_header"
+                    android:background="@drawable/only_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/RecentText"
+                        android:layout_marginLeft="14dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Recent"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        />
+
+                    <TextView
+                        android:layout_marginRight="20dp"
+                        android:id="@+id/recentHideShow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Show"
+                        android:layout_marginLeft="170dp"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerRecent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:orientation="horizontal"
+                    android:clipToPadding="false"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp" />
+
+                <!-- Categories
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categories"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp" />-->
+
+
+                <TextView
+                    android:id="@+id/header"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Explore Internal Storage and SD card"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/only_header"
+                    android:gravity="center"
+                    android:paddingBottom="0dp"/>
+                <GridLayout
+                    android:id="@+id/GLDMode"
+                    android:background="@drawable/header_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_margin="0dp"
+                    android:columnCount="2"
+                    android:layout_marginTop="8dp"
+                    android:rowOrderPreserved="false"
+                    android:useDefaultMargins="true">
+
+
+                    <!-- Category 1
+                    <LinearLayout
+                        android:id="@+id/dcumentId"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/bg_card_dark"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/dowenload"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:iiv_icon="cmd-download"
+                            android:tint="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="All Document\n181 MB"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/fileFolder2"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/bg_card_dark"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/image"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:iiv_icon="cmd-image"
+                            android:tint="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="All Apk\n320 MB"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/videoId"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/bg_card_dark"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/video"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:iiv_icon="cmd_close"
+                            android:tint="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="All Videos\n320 MB"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/imageIdd"
+                        android:layout_width="0dp"
+                        android:layout_height="80dp"
+                        android:layout_columnWeight="1"
+                        android:background="@drawable/bg_card_dark"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:padding="8dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/file"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:iiv_icon="cmd_close"
+                            android:tint="#FFFFFF" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            android:text="All Images\n320 MB"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+                    </LinearLayout>-->
+                    <LinearLayout
+                        android:id="@+id/imageIdd"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/file"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/gallery"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/Imagetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Images"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RecentLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/recenticon1"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/Recenttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recent File"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/dol"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/dd"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/Dowenlodetext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Downloads"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+
+                    <!-- Item 2 -->
+                    <LinearLayout
+                        android:id="@+id/TreshId"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/treshIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/Treshtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Trash"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <!-- Item 3 -->
+                    <LinearLayout
+                        android:id="@+id/Audioo"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/audiooIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/Audiotext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Audio"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <!-- Item 4 -->
+                    <LinearLayout
+                        android:id="@+id/videoId"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/video"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/Videotext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Videos"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <!-- Item 5 -->
+                    <LinearLayout
+                        android:id="@+id/apklayout"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/image"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/Apktext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="APK"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <!-- Item 6 -->
+                    <LinearLayout
+                        android:id="@+id/dcumentId"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/dowenloaddd"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/Documenttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Documents"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+                    <!--SafeBox-->
+                    <LinearLayout
+                        android:id="@+id/safeBoxLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/safeBoxIcon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/SafeBoxtext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Safe Box"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+
+                    <!--Apps_Sections-->
+                    <LinearLayout
+                        android:id="@+id/safeBoxLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_columnWeight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/bg_card_dark"
+                        android:gravity="center_vertical"
+                        android:padding="12dp">
+
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/safeBoxIcon2"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp" />
+
+                        <TextView
+                            android:id="@+id/SafeBoxtext2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="App Manager"
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"/>
+                    </LinearLayout>
+
+
+
+
+                </GridLayout>
+
+                <!-- Collections -->
+                <TextView
+                    android:id="@+id/AllStorageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Storage"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="2dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/fileFolder"
+                    android:background="@drawable/header_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:padding="8dp">
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/storage"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:src="@drawable/folder3"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="8dp"/>
+
+                    <!-- Right side content -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!-- First row: Title and available -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/storageTitle"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="Internal Storage"
+                                android:textColor="@android:color/white"
+                                android:textStyle="bold"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/internalstor2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Available 4.13 GB"
+                                android:textColor="@android:color/white"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:id="@+id/storageProgress"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginTop="6dp"
+                            android:progressDrawable="@drawable/rounded_progress"
+                            android:progress="30"
+                            android:max="100" />
+
+                        <TextView
+                            android:id="@+id/internalstor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:text="44.27 GB used of 48.45 GB"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:gravity="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <!--Start-->
+                <LinearLayout
+                    android:id="@+id/fileFolderSD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:visibility="visible"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:id="@+id/SDCARD"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:minHeight="60dp"
+                        android:background="@drawable/header_card"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginEnd="0dp">
+
+                        <!-- Icon -->
+                        <com.mikepenz.iconics.view.IconicsImageView
+                            android:id="@+id/storage22"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp" />
+
+                        <!-- ProgressBar -->
+                        <ProgressBar
+                            android:id="@+id/storageProgressSD"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:progressDrawable="@drawable/rounded_progress"
+                            android:progress="50"
+                            android:max="100" />
+
+                        <!-- Text -->
+                        <TextView
+                            android:id="@+id/SDTetxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="-2dp"
+                            android:text="SD Card"
+                            android:textStyle="bold"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <!-- second card yahan same style me add kar sakte ho -->
+                </LinearLayout>
+
+
+
+
+                <!--yahase-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Favorites"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="24dp" />-->
+
+
+                <!-- Favorites Section Header -->
+                <LinearLayout
+                    android:id="@+id/fevLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/only_header"
+                    android:paddingHorizontal="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/favoritesTitle"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Favorites"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/favToggle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hide"
+                        android:textColor="@color/blue"
+                        android:textSize="15sp"
+                        android:padding="4dp" />
+                </LinearLayout>
+
+
+
+                <!-- All Storage-->
+                <LinearLayout
+
+                    android:id="@+id/fevSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/header_card"
+                    android:layout_marginTop="-45dp"
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewforFav"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/header_card" />
+
+                    <ImageView
+                        android:id="@+id/noFav"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"
+                        android:src="@drawable/light_no_fav"
+                        android:background="@color/white" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nv2"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#1E1E1E"
+        app:itemTextColor="#FFFFFF"
+        app:itemIconTint="#FFFFFF"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer_item" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

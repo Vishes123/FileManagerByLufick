@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- File Name Header -->
+    <TextView
+        android:id="@+id/fileNameText"
+        android:text="File Name"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Each row: File icon + Operation label -->
+    <LinearLayout
+        android:id="@+id/rowCopy"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/folder2" />
+
+        <TextView
+            android:id="@+id/btnCopy"
+            android:text="Copy"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowMove"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/folder2" />
+
+        <TextView
+            android:id="@+id/btnMove"
+            android:text="Move"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowRename"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/folder2" />
+
+        <TextView
+            android:id="@+id/btnRename"
+            android:text="Rename"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowDelete"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/folder2" />
+
+        <TextView
+            android:id="@+id/btnDelete"
+            android:text="Delete"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowDetails"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/folder2" />
+
+        <TextView
+            android:id="@+id/btnDetails"
+            android:text="Details"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowFavorite"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/folder2" />
+
+        <TextView
+            android:id="@+id/btnFavorite"
+            android:text="Add to Favorite"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/rowHidee"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/folder2" />
+
+        <TextView
+            android:id="@+id/btnFavori"
+            android:text="Hide Files Or Folders"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

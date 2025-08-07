@@ -1,0 +1,65 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Always show Search icon-->
+    <item
+        android:id="@+id/action_search2"
+        android:title=""
+        app:showAsAction="always" />
+    <!-- Always show Home icon -->
+    <item
+        android:id="@+id/action_home2"
+        android:title="Home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_select_all2"
+        android:title="Select All"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_delete_selected2"
+        android:title="Delete"
+        app:showAsAction="always" />
+
+
+    <!-- Overflow items -->
+    <item
+        android:id="@+id/action_sort2"
+        android:title="Sort"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_view2"
+        android:title="View Option"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/view_list2"
+                android:title="List View"
+                android:checkable="true" />
+            <item
+                android:id="@+id/view_grid2"
+                android:title="Grid View"
+                android:checkable="true" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/action_advance2"
+        android:title="Advance Setting"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_close2"
+        android:title="Close"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_compress2"
+        android:title="Compress"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_properties2"
+        android:title="Properties"
+        app:showAsAction="never" />
+</menu>

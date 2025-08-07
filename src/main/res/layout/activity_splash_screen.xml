@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SplashScreen">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/chelsea_market"
+        android:padding="8dp"
+        android:textColor="#FAF8EB"
+        android:text="Lufick"
+        android:textSize="35sp"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold" />
+
+
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/greenfolder"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/chelsea_market"
+        android:padding="8dp"
+        android:textColor="#CDDC39"
+        android:text="File Manager"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/blue"
+        android:background="@drawable/progress_bar_card"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/chelsea_market"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:text="CopyRight@2025"
+        android:textSize="25sp"
+        android:layout_marginTop="120dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

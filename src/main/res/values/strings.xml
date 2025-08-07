@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">FileManagerByLufic</string>
+    <string name="title_activity_app_drawer">AppDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+
+    <string name="language">Language</string>
+    <string name="theme">Theme</string>
+    <string name="select_language">Choose your preferred language</string>
+    <string name="select_theme">Choose your preferred theme</string>
+
+
+    <string-array name="theme_options">
+        <item>System Default</item>
+        <item>Light Mode</item>
+        <item>Dark Mode</item>
+    </string-array>
+
+    <string-array name="theme_values">
+        <item>system_default</item>
+        <item>light</item>
+        <item>dark</item>
+    </string-array>
+    <string-array name="cache_limit_options">
+        <item>50 MB</item>
+        <item>100 MB</item>
+        <item>200 MB</item>
+        <item>500 MB</item>
+    </string-array>
+
+    <string-array name="cache_limit_values">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>500</item>
+    </string-array>
+
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Spanish</item>
+        <item>Arabic</item>
+        <item>Russian</item>
+        <item>German</item>
+        <item>Chinese</item>
+        <item>French</item>
+        <item>Japanese</item>
+    </string-array>
+
+    <string-array name="language_values">
+        <item>en</item>  <!-- English -->
+        <item>hi</item>  <!-- Hindi -->
+        <item>es</item>  <!-- Spanish -->
+        <item>ar</item>  <!-- Arabic -->
+        <item>ru</item>  <!-- Russian -->
+        <item>de</item>  <!-- German -->
+        <item>zh</item>  <!-- Chinese -->
+        <item>fr</item>  <!-- French -->
+        <item>ja</item>  <!-- Japanese -->
+    </string-array>
+
+
+    <string-array name="fav_count_entries">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="fav_count_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+    </string-array>
+
+
+    <string-array name="trash_delete_entries">
+        <item>5 days</item>
+        <item>10 days</item>
+        <item>15 days</item>
+        <item>30 days</item>
+    </string-array>
+
+    <string-array name="trash_delete_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>30</item>
+    </string-array>
+
+
+    <string-array name="recent_count_entries">
+        <item>50</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+
+    <string-array name="recent_count_values">
+        <item>50</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+
+
+</resources>

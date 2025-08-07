@@ -1,0 +1,142 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        app:iconTint="@color/white"
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/action_home"
+        android:title="Search"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom"
+         />
+
+    <item
+        android:id="@+id/menu_select_all"
+        android:title="Select All"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_paste"
+        android:title="Paste"
+        app:showAsAction="always"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_copy2"
+        android:title="Copy"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_select_all"
+        android:title="Select All"
+        android:visible="false"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_pasteTwo"
+        android:title="Paste"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_Moved"
+        android:title="Paste"
+        android:visible="false"
+        app:showAsAction="always" />
+
+
+
+
+    <item
+        android:id="@+id/menu_sort_by"
+        android:title="Sort By"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_Hide"
+        android:title="Hide"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_Unhide"
+        android:title="Show"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/removeToFav"
+        android:title="Removed from favorites"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_add_folder"
+        android:title="Add New Folder"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/DandD"
+        android:title="Click to start Drag and Drop"
+        android:checkable="true" />
+
+    <item
+        android:id="@+id/action_view"
+        android:title="View"
+        android:icon="@android:drawable/ic_dialog_dialer">
+
+        <menu android:checkableBehavior="single">
+            <item
+                android:id="@+id/view_grid"
+                android:title="Grid View"
+                android:checkable="true" />
+            <item
+                android:id="@+id/view_list"
+                android:title="List View"
+                android:checkable="true" />
+        </menu>
+    </item>
+
+
+     <!--   <item
+            android:id="@+id/HideUnhide"
+            android:title="Show Hidden Files and Folders"
+            android:checkable="true"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/ShowFev"
+            android:title="Show Fevrate Files or Favorites"
+            app:showAsAction="never" /> -->
+
+    <item
+        android:id="@+id/menu_AdvanceSetting"
+        android:title="Advanced Settings"
+        app:showAsAction="never">
+    <menu>
+        <item
+            android:id="@+id/HideUnhide"
+            android:title="Show Hidden Files and Folders"
+            android:checkable="true"
+            android:checked="false"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/ShowFev"
+            android:title="Show Favorite Files"
+            app:showAsAction="never" />
+    </menu>
+</item>
+    <item
+        android:id="@+id/Close"
+        android:title="Close"
+        app:showAsAction="never" />
+
+
+
+
+
+</menu>

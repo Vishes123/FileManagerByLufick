@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/time"
+        android:id="@+id/id2"
+        android:title="Internal Storage"/>
+
+    <item
+        android:icon="@drawable/cloud_storage"
+        android:id="@+id/id3"
+        android:title="Storage Analysis"/>
+
+    <item
+        android:icon="@drawable/favfolder"
+        android:id="@+id/id4"
+        android:title="Favorites"/>
+
+    <item
+        android:icon="@drawable/computersetting"
+        android:id="@+id/id5"
+        android:title="System Information"/>
+
+    <item
+        android:id="@+id/menu_collection"
+        android:icon="@drawable/folder3"
+        android:title="Collection">
+
+        <menu>
+            <item
+                android:id="@+id/nav_images"
+                android:icon="@drawable/gallery"
+                android:title="Images" />
+            <item
+                android:id="@+id/nav_videos"
+                android:icon="@drawable/video"
+                android:title="Videos" />
+            <item
+                android:id="@+id/nav_audio"
+                android:icon="@drawable/audio"
+                android:title="Audios" />
+            <item
+                android:id="@+id/nav_documents"
+                android:icon="@drawable/doc"
+                android:title="Documents" />
+            <item
+                android:id="@+id/nav_apks"
+                android:icon="@drawable/apk"
+                android:title="APKs" />
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/nav_Setting"
+        android:icon="@drawable/security"
+        android:title="Setting" />
+
+</menu>

@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FileManagerByLufic" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="popupMenuStyle">@style/AppPopupMenuStyle</item>
+        <item name="actionOverflowMenuStyle">@style/AppPopupMenuStyle</item>
+
+    </style>
+
+    <style name="Theme.FileManagerByLufic" parent="Base.Theme.FileManagerByLufic" />
+
+    <style name="Theme.FileManagerByLufic.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.FileManagerByLufic.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.FileManagerByLufic.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+
+
+</resources>

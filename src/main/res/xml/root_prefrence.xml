@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Interface Settings">
+
+        <ListPreference
+            android:key="theme_choice"
+            android:title="Choose App Theme"
+            android:summary="Manually select Light, Dark, or follow System Default"
+            android:defaultValue="system"
+            android:entries="@array/theme_options"
+            android:entryValues="@array/theme_values" />
+
+        <ListPreference
+            android:key="fav_count"
+            android:title="Favorites Count to Show"
+            android:summary="Select how many favorites to display on dashboard"
+            android:defaultValue="10"
+            android:entries="@array/fav_count_entries"
+            android:entryValues="@array/fav_count_values" />
+        <SwitchPreferenceCompat
+            android:key="Circularicon"
+            android:title="Circular icon"
+            android:summary="Automatically switch between Light/Dark theme based on time of day"
+            android:defaultValue="true" />
+        <ListPreference
+            android:key="trash_delete_days"
+            android:title="Auto Delete Trash After"
+            android:summary="Select after how many days trash should be deleted"
+            android:defaultValue="15"
+            android:entries="@array/trash_delete_entries"
+            android:entryValues="@array/trash_delete_values" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="General Settings">
+        <!-- Language Selection -->
+        <ListPreference
+            android:key="language"
+            android:title="Language"
+            android:summary="Choose your preferred language"
+            android:entries="@array/language_options"
+            android:entryValues="@array/language_values"
+            android:defaultValue="en" />
+
+        <ListPreference
+            android:key="recent_count"
+            android:title="Recent Count to Show"
+            android:summary="Select how many recent file to display on dashboard"
+            android:defaultValue="50"
+            android:entries="@array/recent_count_entries"
+            android:entryValues="@array/recent_count_values" />
+
+        <!-- Show Hidden Files and Folders -->
+        <SwitchPreferenceCompat
+            android:key="show_hidden"
+            android:title="Show Hidden Files and Folders"
+            android:summary="Display hidden content in file lists"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+
+
+
+    <PreferenceCategory android:title="Cache Settings">
+
+        <!-- Clear Cache Option -->
+        <Preference
+            android:key="clear_cache"
+            android:title="Clear Cache"
+            android:summary="Remove cached data to free up space" />
+
+        <!-- Set Cache Limit Option -->
+        <ListPreference
+            android:key="cache_limit"
+            android:title="Set Cache Limit"
+            android:summary="Choose how much cache can be used"
+            android:defaultValue="50"
+            android:entries="@array/cache_limit_options"
+            android:entryValues="@array/cache_limit_values" />
+    </PreferenceCategory>
+
+
+    <!-- Move About Us Inside PreferenceScreen -->
+    <PreferenceCategory android:title="About Us">
+
+        <Preference
+            android:key="send_feedback"
+            android:title="Send Feedback"
+            android:summary="Send us your feedback via email" />
+
+        <Preference
+            android:key="privacy_policy"
+            android:title="Privacy Policy"
+            android:summary="Read our privacy policy" />
+
+        <Preference
+            android:key="terms"
+            android:title="Terms and Conditions"
+            android:summary="View terms and conditions" />
+
+        <Preference
+            android:key="app_version"
+            android:title="App Version"
+            android:summary="1.0.0"
+            android:selectable="false" />
+
+    </PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>
